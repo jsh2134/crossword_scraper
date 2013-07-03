@@ -67,6 +67,8 @@ def main():
 	opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
 
 	login(opener)
+
+	# will scrape today's and each day 100 days into the past
 	scrape_crosswords(opener, 0, 100)
 
 main()
